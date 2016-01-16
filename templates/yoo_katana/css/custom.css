@@ -99,7 +99,11 @@ margin-top: -60px;
 
 /* Sidebar menu hover */
 .sidebar ul li>a {
+  display: block;
   padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   background-color: transparent;
   transition: all .3s ease;
   text-decoration: inherit;
@@ -107,6 +111,9 @@ margin-top: -60px;
 }
 .sidebar ul li>a:hover {
   padding-left: 27px;
+  padding-right: 9px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   background-color: #e5e5e5
 }
 
