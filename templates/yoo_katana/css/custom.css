@@ -1,30 +1,145 @@
 /* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
-
+ 
 /* ========================================================================
    Use this file to add custom CSS easily
- ========================================================================== */ 
+ ========================================================================== */
 
+.intervesto .uk-button,
+.uk-slideshow .uk-button {
+	font-size: 15px;
+	font-weight: 100;
+	color: #FFFFFF;
+	border-radius: 12px;
+	border-color: #F90;
+	background-color: #F90;
+	display: inline-block;
+}
+.intervesto .uk-button:hover,
+.uk-slideshow .uk-button:hover {
+	background-color: #2C4B71;
+	border-color: #2C4B71;
+}
+
+/* Social buttons in footer */
+.intervesto .uk-icon-button {
+	font-size: 20px;
+	background-color: #F90;
+}
+.intervesto .uk-icon-button:hover {
+	background-color: #2C4B71;
+}
+
+/* Producten; checkbox, cross icons */
+div.intervesto .uk-icon-check-square-o {
+	color: #F90;
+}
+div.intervesto .uk-icon-close {
+	color: red;
+}
+
+/* Banner teaser */
+ul.uk-slideshow li h1,
+ul.uk-slideshow li h3,
+.tm-top-teaser h1{
+	color: white;
+	opacity: 0.8;
+	background-color: #2C4B71;
+	border-radius: 5px;
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ul.uk-slideshow li p,
+.tm-top-teaser p{
+	color: white;
+	font-size: 22px;
+	line-height: 34px;
+}
+.arthur-top-teaser>div {
+	height: 400px;
+}
+
+/* Correct left padding teaser */
+.uk-grid > [class*="uk-width-"] {
+	padding-left: 0px;
+}
+
+/* Site search icon */
+.uk-icon-search {
+	color: #2C4B71;
+}
+
+/* Sub nav bar */
+div.top-teaser {
+	margin-top: 0px;
+}
+ul.uk-subnav {
+	margin: 0px;
+	padding-bottom: 10px;
+}
+.uk-subnav li {
+	padding-left: 0px;
+}
+
+/* ========================================================================
+   VVV To be cleaned-up VVV
+ ========================================================================== */
+ /* Mainmenu aanpassingen */
+.uk-navbar-nav > li > a:before {
+    height: 2px;
+}
+.uk-parent>.uk-nav-sub li a {
+    font-size: 13px;
+}
+
+/*Accordion settings */
+.uk-accordion-title {
+    margin-top: 0;
+    margin-bottom: 13px;
+    padding: 8px 13px;
+    background: #eee;
+    font-size: 19px;
+    line-height: 25px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+/*Topteaser aanpassingen voor Widgetkit*/
+ul.uk-slideshow li h1, .tm-top-teaser h1 {
+    text-shadow: 2px 2px 3px #000;
+    font-size: 38px;
+}
+
+ul.uk-slideshow li h3, .tm-top-teaser h3 {
+    color: white;
+    text-shadow: 2px 2px 3px #000;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+/*Topteaser aanpassingen slogan */
+.top-teaser {
+  margin-top: 15px;
+  font-size: 13px;
+  color: white;
+}
+.uk-subnav > * > * {
+    display: inline-block;
+    color: white;
+}
+ 
 /* blokken pop-up */
 .blokken {
   padding: 15px;
   transition: all .3s ease;
 }
-
+ 
 .blokken:hover {
-	background-color: white;
+    background-color: white;
     z-index: 1;
     transform: scale(1.1);
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
-}
-
-/* Button aanpassingen */
-.uk-button {
-    font-size: 15px;
-    border-radius: 12px;
-    border: 1px solid #2c4b71;
-    font-weight: 100;
-    background: #2c4b71;
-    color: #FFFFFF;
 }
 
 /* Tekst aanpassingen */
@@ -42,10 +157,22 @@ h1, h2, h3, h4, h6 {
     color: #2c4b71;
     text-rendering: optimizelegibility;
 }
-
+.uk-article-title {
+    font-size: 30px;
+}
+a, .uk-link {
+    text-decoration: underline;
+}
+.uk-subnav>li>a {
+    color: #000000;
+}
+.large-teaser-text {
+    font-size: 30px;
+}
+ 
 /* Hoofdartikel aanpassingen */
 .uk-article-lead {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 34px;
   color: #000000;
 }
@@ -59,48 +186,25 @@ h1, h2, h3, h4, h6 {
 .h3-lead {
   font-size: 24px;
 }
-
+ 
 /* Main aanpassingen */
-.uk-panel-box .uk-button,
-.uk-panel-box .uk-button-primary {
-    border-color: #2c4b71;
-    color: #ffffff;
-}
 .uk-panel,
 .uk-panel:hover {
     border-radius: 12px;
 }
 .blokken {
-    font-size: 15px;
+    font-size: 16px;
 }
-
+ 
 .uk-main-bottom {
 margin-top: -60px;
 }
-
-/* Sidebar aanpassingen */
-
-/* Contactformulier aanpassingen */
-.formResponsive select,
-.formResponsive textarea,
-.formResponsive input[type="text"],
-.formResponsive input[type="password"] {
-    display: inline-block;
-    height: 25px;
-    padding: 4px;
-    font-size: 13px;
-    line-height: 18px;
-    color: #000000;
-}
-
-.uk-panel.no-lines .uk-list-line>li { 
-  border-top: none medium;
-}
-
+ 
 /* Sidebar menu hover */
 .sidebar ul li>a {
   display: block;
   padding-left: 18px;
+  font-size: 16px;
   padding-right: 18px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -117,24 +221,51 @@ margin-top: -60px;
   background-color: #e5e5e5
 }
 
+/* Sidebar aanpassingen */
+.uk-list-line>li:nth-child(n+2) {
+    border-top: 1px solid #ddd;
+}
+ 
+/* Contactformulier aanpassingen */
+.formResponsive select,
+.formResponsive textarea,
+.formResponsive input[type="text"],
+.formResponsive input[type="password"] {
+    display: inline-block;
+    height: 25px;
+    padding: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+}
+ 
+.uk-panel.no-lines .uk-list-line>li { 
+  border-top: none medium;
+}
+ 
 /* Breadcrumps aanpassingen */
 .uk-breadcrumb {
   text-transform: none;
+  font-size: 13px;
   margin-top: -60px;
   padding: 10px;
 }
 
-/* Banner teaser */
-ul.uk-slideshow li h1,
-.tm-top-teaser h1{
-  color: white;
+/* Footertop aanpassingen */
+.footer-font {
+  font-size: 14px;
 }
-ul.uk-slideshow li p,
-.tm-top-teaser p{
-  color: white;
-  font-size: 22px;
-  line-height: 34px;
+
+/* Footermenu aanpassingen */
+.footermenu {
+  font-size: 14px;
 }
-.arthur-top-teaser>div {
-  height: 400px;
+
+/* Footer copyright aanpassingen */
+.footer-copyright {
+  font-size: 14px;
+  color: #000000;
+}
+.copylink {
+  color: #000000;
 }
